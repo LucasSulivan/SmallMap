@@ -1,7 +1,7 @@
 import { Modal } from "./UI/Modal"
 
 class PlaceFinder {
-  constructor (){
+  constructor() {
     const addressForm = document.querySelector('form');
     const locateUserBtn = document.getElementById('locate-btn');
 
@@ -9,14 +9,14 @@ class PlaceFinder {
     addressForm.addEventListener('submit', this.findAddressHandler)
   }
 
-  locateUserHandler () {
-    if(!navigator.geolocation){
+  locateUserHandler() {
+    if (!navigator.geolocation) {
       alert('Location feature is not avaible in your browser');
       return
     }
-      const modal = new Modal('loading-modal-content', 'Loading location - please wait')
-      modal.show()
-    navigator.geolocation.getCurrentPosition( 
+    const modal = new Modal('loading-modal-content', 'Loading location - please wait')
+    modal.show()
+    navigator.geolocation.getCurrentPosition(
       successResult => {
         modal.hide()
         const coordinates = {
@@ -26,13 +26,13 @@ class PlaceFinder {
         console.log(coordinates)
       }, error => {
         modal.hide()
-        alert (' Could not locate you unfortunatly.PLease enter an address manually!')
+        alert(' Could not locate you unfortunatly.PLease enter an address manually!')
       }
-     
+
     )
   }
 
-  findAddressHandler () {
+  findAddressHandler() {
 
   }
 }
