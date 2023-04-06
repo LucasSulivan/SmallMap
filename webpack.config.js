@@ -12,9 +12,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist', 'assets', 'scripts'),
     publicPath: 'assets/scripts/'
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'eval-cheap-module-source-map',
   devServer: {
-    contentBase: './dist'
+    static:'./dist'
   },
   module: {
     rules: [
