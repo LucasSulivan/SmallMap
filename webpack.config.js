@@ -4,8 +4,7 @@ const CleanPlugin = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    'SharePlace': './src/SharePlace.js',
-    'MyPlace': './src/MyPlace.js',
+    'SharePlace': './src/SharePlace.js'
   },
   output: {
     filename: '[name].js',
