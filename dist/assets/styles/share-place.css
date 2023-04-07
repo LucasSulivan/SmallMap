@@ -2,34 +2,41 @@ label,
 input {
   display: block;
   width: 100%;
+
 }
 
 label {
+  font-size: 28px;
   font-weight: bold;
-  margin: 0.5rem 0;
+  margin-bottom: 13px;
+
+  
 }
 
 input {
   font: inherit;
-  padding: 0.15rem 0.25rem;
+  padding: 0.5rem 0.5rem;
   border: 1px solid #ccc;
-  font-size: 3rem;
+  font-size: 1rem;
   text-align: center;
   color: #696969;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgb(0,0,0,0.1);
+  font-weight: bold;
 }
 
 input:focus {
   outline: none;
-  background: #efe3ff;
-  border-color: #36007c;
+  border-color:#a7a4a4;
 }
 
 #selected-place {
-  width: 40rem;
+  width: 52rem;
   height: 25rem;
   max-width: 90%;
   margin: 2rem auto;
   border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 #map {
@@ -60,4 +67,6 @@ input:focus {
   border: 1px solid #ccc;
   padding: 1rem;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgb(0,0,0,0.2) ;
 }

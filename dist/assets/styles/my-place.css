@@ -38,9 +38,3 @@
 #share-controls a:focus {
   outline: none;
 }
-
-#share-controls a:hover,
-#share-controls a:active {
-  background: #55007c;
-  border-color: #55007c;
-}
