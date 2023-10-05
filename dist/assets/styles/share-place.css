@@ -2,41 +2,36 @@ label,
 input {
   display: block;
   width: 100%;
-
 }
 
 label {
-  font-size: 28px;
   font-weight: bold;
-  margin-bottom: 13px;
-
-  
+  margin: 0.5rem 0;
 }
 
 input {
   font: inherit;
-  padding: 0.5rem 0.5rem;
+  padding: 0.15rem 0.25rem;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  border-radius: 0.3rem;
+  font-size: 3rem;
   text-align: center;
   color: #696969;
-  border-radius: 0.5rem;
-  box-shadow: 0 1px 2px rgb(0,0,0,0.1);
-  font-weight: bold;
 }
 
 input:focus {
   outline: none;
-  border-color:#a7a4a4;
+  background-color: #ffffff8f;
+  border-color: #1971c2;
 }
 
 #selected-place {
-  width: 52rem;
+  width: 40rem;
   height: 25rem;
   max-width: 90%;
   margin: 2rem auto;
   border: 1px solid #ccc;
-  border-radius: 2px;
+  border-radius: 0.5rem;
 }
 
 #map {
@@ -54,10 +49,13 @@ input:focus {
   border: 1px solid #ccc;
   padding: 1rem;
   text-align: center;
+  border-radius: 0.5rem;
 }
 
 #share-controls input {
-  font-size: 1.15rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
 }
 
 #place-data {
@@ -65,8 +63,7 @@ input:focus {
   max-width: 90%;
   margin: 2rem auto;
   border: 1px solid #ccc;
+  border-radius: 0.5rem;
   padding: 1rem;
   text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 1px 2px rgb(0,0,0,0.2) ;
 }

@@ -1,17 +1,18 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
 html {
   font-family: sans-serif;
-  background-color: #f8f9fa;
+}
+
+body {
+  margin: 0;
 }
 
 header {
-  background-color:#339af0;
-  width:100vw;
+  background: #4dabf7;
+  width: 100%;
   height: 4rem;
   display: flex;
   justify-content: center;
@@ -25,37 +26,35 @@ header h1 {
   margin: 0;
 }
 
-.btn {
-  font-weight: bold;
+button {
+  font: inherit;
   font-size: 1.25rem;
-  background: #339af0;
+  background: #4dabf7;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   padding: 0.5rem 1.5rem;
-  margin-top: 1rem;
+  margin: 0.5rem 0;
   cursor: pointer;
-  transition: all 0.9s;
-  box-shadow: 0 1px 2px rgb(0,0,0,0.4);
+  transition: all 1s;
 }
 
-.btn:hover,
-.btn:active {
-  color: #228be6;
-  background-color: #fff;
-  transform: translateY(-0.4rem);
+button:focus {
+  outline: none;
+}
 
+button:hover,
+button:active {
+  background: #1971c2;
 }
 
 button:disabled,
 button:disabled:hover,
 button:disabled:active {
-  
   background: #ccc;
   color: #9b9b9b;
   border-color: #ccc;
   cursor: not-allowed;
- 
 }
 
 .backdrop {
@@ -76,7 +75,7 @@ button:disabled:active {
   background: white;
   z-index: 20;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
 }
 
 .modal__content {
@@ -102,8 +101,8 @@ button:disabled:active {
   height: 46px;
   margin: 1px;
   border-radius: 50%;
-  border: 5px solid #228be6;
-  border-color: #228be6 transparent #228be6 transparent;
+  border: 5px solid #1971c2;
+  border-color: #1971c2 transparent #1971c2 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 @keyframes lds-dual-ring {

@@ -18,7 +18,7 @@
   width: 40rem;
   max-width: 90%;
   margin: 2rem auto;
-  border: 1px solid #ccc;
+  border: 1px solid #e6e6e6;
   padding: 1rem;
   text-align: center;
 }
@@ -26,9 +26,8 @@
 #share-controls a {
   text-decoration: none;
   font-size: 1.25rem;
-  background: #36007c;
+  background: #1971c2;
   color: white;
-  border: 1px solid #36007c;
   border-radius: 6px;
   padding: 0.5rem 1.5rem;
   margin: 0.5rem 0;
