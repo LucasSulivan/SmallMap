@@ -4,16 +4,17 @@ const CleanPlugin = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    'SharePlace': './src/SharePlace.js'
+    'SharePlace': './src/SharePlace.js',
+    'MyPlace': './src/MyPlace.js',
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist', 'assets', 'scripts'),
     publicPath: 'assets/scripts/'
   },
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'cheap-module-eval-source-map',
   devServer: {
-    static:'./dist'
+    contentBase: './dist'
   },
   module: {
     rules: [
